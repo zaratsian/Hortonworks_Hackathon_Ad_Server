@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  	td{
+  		font-size:14px;
+  	}
+  </style>
+</head>
+<body>
+
+<div class="container" style="width:80%;">
+  <h1 style="float:top;">
+
+    <img style="margin-left:30px;top:-100px;max-width:200px;" src="./img/hwx.png" />
+    <div style="display:block;text-align:right;font-size:30px;" >Ad Serving Demo - Publisher Dashboard</div>
+
+  </h1>
+
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand">Publisher View</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="companies.html">Companies</a></li>
+      <li class="active"><a href="campaigns.html">Campaigns</a></li>
+      <li><a href="users.html">Users</a></li>
+      <li><a href="results.html">Results</a></li>                  
+    </ul>
+  </div>
+</nav>
+  
+
+
+  <h3>List of Campaigns</h3>      
+  <table id="data-table" style="border:1px;width:100%;font-size:22px;">
+    <tr style="background-color:#c1c1c1;padding:2px;font-size:16px;">
+      <th>
+        Campaign Id 
+      </th>
+      <th>
+        Status
+      </th>
+      <th>
+        Ad Image URL
+      </th>
+      <th>
+        Company Id
+      </th>
+    </tr>
+    <tr id="loading-data" >
+      <td colspan="4" style="text-align:center;">
+          <img src="./img/loading1.gif">
+      </td>
+    </tr>
+    </table>
+
+  
+      
+</div>
+
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+    $.getJSON("http://dzaratsian-10.field.hortonworks.com:7080/campaign", function(obj) {
+        $('#loading-data').remove();
+        $.each(obj.campaigns, function(ind, cObj) {
+            $('#data-table tr:last').after('<tr><td>'+cObj.campaignid+'</td><td>'+((cObj.Active=='1') ? 'Active' : 'Inactive')+'</td><td>'+cObj.campaignurl+'</td><td>'+cObj.companyid+'</td></tr>');
+        });
+    });
+});
+
+
+</script>
+    
+</body>
+</html>

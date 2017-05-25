@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Blog Example</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+ 
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+
+<div style="left-margin:50px;">
+
+
+
+    <div style="display:block;width:80%;text-align:center;">
+        <img style="margin-left:30px;float:left;top:-100px;" src="./img/hwx.png" />
+        <h1 >Ad Serving Demo</h1>
+    </div>
+
+    <div style="display:block;width:80%;padding-left:350px;padding-top:50px;margin-left:350px;text-align:left;">
+
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              1 of 2
+            </div>
+            <div class="col">
+              1 of 2
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              1 of 3
+            </div>
+            <div class="col">
+              1 of 3
+            </div>
+            <div class="col">
+              1 of 3
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+    <hr>
+
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>    
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+<script type="text/javascript">
+
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+
+$(document).ready(function() {
+    $.getJSON("http://dzaratsian-10.field.hortonworks.com:7080/user", function(obj) {
+        $.each(obj.users, function(ind, userObj) {
+            $("#dropDownUser").append("<option value='"+userObj.userid+"''> UserID: " + userObj.userid + ", Name: " +userObj.FirstName+ " " +userObj.LastName+ ", Age: " +userObj.Age+  ", City: " +userObj.City+", "+userObj.State+"</option>");
+        });
+    });
+});
+
+
+function startTestWithUser(){
+    
+    if ($('#dropDownUser').val() === "-1") {
+        alert('Select a user dummy!')
+        return false;
+    }else{
+
+//        setCookie("ad-demo-uid",$('#dropDownUser').val(),1);
+//        window.location.replace("./index1.html");        
+
+        $.removeCookie("ad-demo-uid");
+        $.cookie("ad-demo-uid", );
+        document.cookie="my-ad-demo-uid=1";
+        alert($.cookie("my-ad-demo-uid"));
+        window.location.replace("./index1.html");        
+    }
+}
+
+//http://dzaratsian-10.field.hortonworks.com:7080/user
+
+
+</script>
+
+</body>
+
+</html>
