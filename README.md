@@ -17,6 +17,10 @@ May 25, 2017
 <br><img src="./screenshots/Screen Shot 2017-05-25 at 10.09.56 AM.png" class="inline"/>
 <br>
 <br>
+<br>NiFi Flow - Orchestrates the Ad Server by accepting HTTP requests, processing data, and pushing clickstream data to Kafka for real-time analytics:
+<br><img src="./screenshots/Screen Shot 2017-05-26 at 9.43.06 AM.png" class="inline"/>
+<br>
+<br>
 <br>Website - Showing Ads based on real-time models, clickstream enrichment, and business rules:
 <br><img src="./screenshots/Screen Shot 2017-05-25 at 10.10.38 AM.png" class="inline"/>
 <br>
