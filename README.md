@@ -24,4 +24,7 @@ May 25, 2017
 <br>Website - Showing Ads based on real-time models, clickstream enrichment, and business rules:
 <br><img src="./screenshots/Screen Shot 2017-05-25 at 10.10.38 AM.png" class="inline"/>
 <br>
+<br>
+<br>Spark (Zeppelin Notebook) - Used to build predictive model to recommend campaigns based on user demographics and historical clickstream data.
+<br><img src="./screenshots/Screen Shot 2017-05-26 at 1.26.07 PM.png" class="inline"/>
 
