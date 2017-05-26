@@ -24,4 +24,4 @@ May 25, 2017
 <br>
 <br>Spark (Zeppelin Notebook) - Used to build predictive model to recommend campaigns based on user demographics and historical clickstream data.
 <br><img src="./screenshots/Screen Shot 2017-05-26 at 1.26.07 PM.png" class="inline"/>
-
+<br>
