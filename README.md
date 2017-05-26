@@ -6,6 +6,7 @@ May 25, 2017
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;One-Pager
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;NiFi Template (used for website orchestration, clickstream routing, enrichment)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;SAM Real-time Workflow (used for realtime analytics & machine learning, time windowing)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Spark / Zeppelin Notebook (used to build predictive models for campaign recommendations based on user demographics and historical clickstream data)
 <br>
 <br><b>References:</b>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;<a href="https://hortonworks.com/products/data-center/hdp/">Hortonworks Data Platform (HDP)</a>
@@ -22,6 +23,6 @@ May 25, 2017
 <br>Website - Showing Ads based on real-time models, clickstream enrichment, and business rules:
 <br><img src="./screenshots/Screen Shot 2017-05-25 at 10.10.38 AM.png" class="inline"/>
 <br>
-<br>Spark (Zeppelin Notebook) - Used to build predictive model to recommend campaigns based on user demographics and historical clickstream data.
+<br>Spark (Zeppelin Notebook) - Used to build predictive models to recommend relevant campaigns based on user demographics and historical clickstream data.
 <br><img src="./screenshots/Screen Shot 2017-05-26 at 1.26.07 PM.png" class="inline"/>
 <br>
