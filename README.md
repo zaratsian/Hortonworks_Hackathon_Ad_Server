@@ -8,6 +8,11 @@ May 25, 2017
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;SAM Real-time Workflow (used for realtime analytics & machine learning, time windowing)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;Spark / Zeppelin Notebook (used to build predictive models for campaign recommendations based on user demographics and historical clickstream data)
 <br>
+<br><b>HBase DDL:</b>
+<br>Create ‘campaign’,’campaign_info’
+<br>Create ‘company’,’company_info’
+<br>Create ‘user’,’user_info’
+<br>
 <br><b>References:</b>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;<a href="https://hortonworks.com/products/data-center/hdp/">Hortonworks Data Platform (HDP)</a>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;<a href="https://hortonworks.com/products/data-center/hdf/">Hortonworks Data Flow (HDF)</a>
