@@ -1,0 +1,51 @@
+{
+ "type": "record",
+ "namespace": "adserver_name",
+ "name": "adserver_name",
+ "fields": [
+  {
+   "name": "userid",
+   "type": "string"
+  },
+  {
+   "name": "campaignid",
+   "type": "string"
+  },
+  {
+   "name": "timestamp",
+   "type": "string"
+  },
+  {
+   "name": "mediatype",
+   "type": "string"
+  },
+  {
+   "name": "adtype",
+   "type": "string"
+  },
+  {
+   "name": "activity",
+   "type": "string"
+  },
+  {
+   "name": "age",
+   "type": "int"
+  },
+  {
+   "name": "city",
+   "type": "string"
+  },
+  {
+   "name": "state",
+   "type": "string"
+  },
+  {
+   "name": "campaign_area",
+   "type": "string"
+  },
+  {
+   "name": "campaign_category",
+   "type": "string"
+  }
+ ]
+}
