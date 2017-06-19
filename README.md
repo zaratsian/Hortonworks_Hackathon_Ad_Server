@@ -13,6 +13,59 @@ May 25, 2017
 <br>Create ‘company’,’company_info’
 <br>Create ‘user’,’user_info’
 <br>
+<br><b>Schema Registry Record for "adserver":</b>
+<br>{
+ "type": "record",
+ "namespace": "adserver",
+ "name": "adserver",
+ "fields": [
+  {
+   "name": "userid",
+   "type": "string"
+  },
+  {
+   "name": "campaignid",
+   "type": "string"
+  },
+  {
+   "name": "timestamp",
+   "type": "string"
+  },
+  {
+   "name": "mediatype",
+   "type": "string"
+  },
+  {
+   "name": "adtype",
+   "type": "string"
+  },
+  {
+   "name": "activity",
+   "type": "string"
+  },
+  {
+   "name": "city",
+   "type": "string"
+  },
+  {
+   "name": "state",
+   "type": "string"
+  },
+  {
+   "name": "age",
+   "type": "int"
+  },
+  {
+   "name": "campaign_area",
+   "type": "string"
+  },
+  {
+   "name": "campaign_category",
+   "type": "string"
+  }
+ ]
+}
+<br>
 <br><b>References:</b>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;<a href="https://hortonworks.com/products/data-center/hdp/">Hortonworks Data Platform (HDP)</a>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&bull;&nbsp;<a href="https://hortonworks.com/products/data-center/hdf/">Hortonworks Data Flow (HDF)</a>
